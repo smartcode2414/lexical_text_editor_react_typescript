@@ -8,11 +8,12 @@ import {RichTextPlugin} from '@lexical/react/LexicalRichTextPlugin';
 
 import ExampleTheme from './ExampleTheme';
 import ToolbarPlugin from './plugins/ToolbarPlugin';
-import TreeViewPlugin from './plugins/TreeViewPlugin';
+// import TreeViewPlugin from './plugins/TreeViewPlugin';
 
 const placeholder = 'Enter some rich text...';
 
 const editorConfig = {
+  // editable: false,
   namespace: 'React.js Demo',
   nodes: [],
   // Handling of errors during update
@@ -43,7 +44,7 @@ export default function Editor() {
           />
           <HistoryPlugin />
           <AutoFocusPlugin />
-          <TreeViewPlugin />
+          {/* <TreeViewPlugin /> */}
         </div>
       </div>
     </LexicalComposer>
